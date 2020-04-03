@@ -1,0 +1,149 @@
+---
+title: COVID-19 Mappa Provincie
+#author: \"Francesco Pirotti\"
+#date: \"30/03/2020\"
+
+output: 
+  html_document:
+    css: covidMap.css
+---
+ 
+
+```{r pressure, echo=FALSE,  message=FALSE,  warning=FALSE, comment=FALSE, warning=FALSE}
+library(leaflet) 
+library(leaflet.extras)
+# library(rpostgis)
+library(RColorBrewer) 
+library(htmltools) 
+library(DT)
+#devtools::install_github("rstudio/fontawesome")
+library(fontawesome)
+
+  dati.prov<- "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-province/dpc-covid19-ita-province.csv"
+  dt<-read.csv(dati.prov)
+  dt$data<-as.Date(dt$data)
+  dt<-dt[dt$codice_provincia<900,]
+  date<-unique(dt$data)
+
+  dt.filtered<- dt[dt$data==Sys.Date()-1, ]
+   
+  
+  pal <- colorNumeric( 
+  palette = c(
+"#ffffd9",
+"#edf8b1",
+"#c7e9b4",
+"#7fcdbb",
+"#41b6c4",
+"#1d91c0",
+"#225ea8",
+"#0c2c84",
+"#0c2c84",  
+"#8c6bb1",
+"#88419d",
+"#6e016b",
+"#990000",
+"#d7301f",
+"#FF0000"
+),  
+  domain = dt.filtered$totale_casi
+    )
+  
+ 
+  class<-sprintf(" 
+  CLASS
+    NAME \"%s casi\"
+    GROUP \"group1\"
+    EXPRESSION \"%s\"
+    STYLE 
+       COLOR  \"%s\"
+       OPACITY 70
+    END
+    STYLE 
+       OUTLINECOLOR  255 255 255
+       WIDTH 20
+       MINWIDTH 0.2
+       MAXWIDTH 5
+    END
+ END
+  ", dt.filtered$totale_casi, dt.filtered$codice_provincia , pal(dt.filtered$totale_casi) )
+  
+mapfile <-sprintf(" 
+include \"header.map\"
+
+LAYER
+ STATUS ON
+ NAME \"Casi_COVID19\"
+ 
+ include \"connection.map\"
+ TYPE POLYGON
+ DATA \"geom3857 from arch_geo.province_istat_2018 using unique id using srid=3857\"
+ METADATA
+   \"wms_title\" \"Casi_COVID-19\"
+   \"wms_srs\"   \"EPSG:3857\"  
+   \"wms_enable_request\" \"*\"
+   \"ows_enable_request\" \"*\"
+ END
+ SIZEUNITS meters
+ CLASSITEM \"cod_prov\"
+ 
+ %s
+ 
+END
+  
+include \"footer.map\" 
+  ", 
+paste0(class, collapse="
+       " ) )
+
+cat(mapfile, file="mapfile.map")
+pwd<-system("pwd", intern = T)
+
+basic.layerlist.list<-list(    baseGroups = list( osm.bn="OSM Notturno", osm.light ="OSM Light",  osm="OSM" ),
+                            overlayGroups = list( Provincie="Provincie")
+                          )
+Sys.setenv("GOOGLE_MAP_GEOCODING_KEY"="AIzaSyB1RNCUZTQu3sd9irQwLQ4c8XStoHWMKeE")
+ 
+
+basic.layerlist<-list(
+  baseGroups = unname(unlist(basic.layerlist.list$baseGroups )),
+  overlayGroups = unname(unlist(basic.layerlist.list$overlayGroups ))
+)
+
+
+
+leaflet(width="100%") %>%
+  fitBounds( 6, 37, 15, 46)  %>% 
+  addTiles(urlTemplate = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+           attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+           options = tileOptions( preferCanvas=TRUE, maxZoom = 19, subdomains = "abcd" ), group="OSM Notturno")  %>% 
+  addTiles(urlTemplate = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+           attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+           options = tileOptions( preferCanvas=TRUE, maxZoom = 19, subdomains = "abcd" ), group="OSM Light")  %>% 
+        
+  addWMSTiles(baseUrl = sprintf("https://geolab02.vs-ix.net/cgi-bin/mapserv?map=%s/mapfile.map",pwd  ) ,
+                    options = WMSTileOptions(format = "image/png", transparent = T),
+                    layers="Casi_COVID19", layerId = "Provincie",
+                    attribution = "Provincie ISTAT @CIRGEO",
+                    group = basic.layerlist.list$overlayGroups$Provincie )%>%
+  
+ # addMouseCoordinates() %>% 
+  addLayersControl(baseGroups    =  basic.layerlist$baseGroups,
+                   overlayGroups = basic.layerlist$overlayGroups,
+                   options = layersControlOptions(collapsed = T) ) %>% 
+ # hideGroup("Confini Comunali") %>%      
+  hideGroup( as.character(basic.layerlist.list$overlayGroups) ) %>%
+  showGroup( c(basic.layerlist.list$overlayGroups$Provincie ) ) %>%
+  addLegend("bottomright", pal = pal, values = dt.filtered$totale_casi,
+    title = "Casi COVID19",
+    labFormat = labelFormat(prefix = ""),
+    opacity = 1
+  ) 
+
+
+
+
+
+  
+```
+

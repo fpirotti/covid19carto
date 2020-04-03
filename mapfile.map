@@ -1,0 +1,1843 @@
+ 
+  include "header.map"
+  
+  LAYER
+   STATUS ON
+   NAME "Casi_COVID19"
+   
+   include "connection.map"
+   TYPE POLYGON
+   DATA "geom3857 from arch_geo.province_istat_2018 using unique id using srid=3857"
+   METADATA
+     "wms_title" "Casi_COVID-19"
+     "wms_srs"   "EPSG:3857"  
+     "wms_enable_request" "*"
+     "ows_enable_request" "*"
+   END
+   SIZEUNITS meters
+   CLASSITEM "cod_prov"
+   
+    
+    CLASS
+      NAME "4991 casi"
+      GROUP "group1"
+      EXPRESSION "1"
+      STYLE 
+         COLOR  "#33A4C2"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "520 casi"
+      GROUP "group1"
+      EXPRESSION "2"
+      STYLE 
+         COLOR  "#E9E8D3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "902 casi"
+      GROUP "group1"
+      EXPRESSION "3"
+      STYLE 
+         COLOR  "#FEFED9"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "826 casi"
+      GROUP "group1"
+      EXPRESSION "4"
+      STYLE 
+         COLOR  "#FAFAD8"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "501 casi"
+      GROUP "group1"
+      EXPRESSION "5"
+      STYLE 
+         COLOR  "#E8E7D3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1428 casi"
+      GROUP "group1"
+      EXPRESSION "6"
+      STYLE 
+         COLOR  "#F5FBC3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "668 casi"
+      GROUP "group1"
+      EXPRESSION "7"
+      STYLE 
+         COLOR  "#F1F1D6"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "220 casi"
+      GROUP "group1"
+      EXPRESSION "8"
+      STYLE 
+         COLOR  "#D8D8CF"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "245 casi"
+      GROUP "group1"
+      EXPRESSION "9"
+      STYLE 
+         COLOR  "#D9D9CF"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1153 casi"
+      GROUP "group1"
+      EXPRESSION "10"
+      STYLE 
+         COLOR  "#FBFDCF"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "250 casi"
+      GROUP "group1"
+      EXPRESSION "11"
+      STYLE 
+         COLOR  "#D9D9D0"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1002 casi"
+      GROUP "group1"
+      EXPRESSION "12"
+      STYLE 
+         COLOR  "#FDFED5"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1205 casi"
+      GROUP "group1"
+      EXPRESSION "13"
+      STYLE 
+         COLOR  "#F9FDCC"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "517 casi"
+      GROUP "group1"
+      EXPRESSION "14"
+      STYLE 
+         COLOR  "#E8E8D3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "10004 casi"
+      GROUP "group1"
+      EXPRESSION "15"
+      STYLE 
+         COLOR  "#FF0000"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "9171 casi"
+      GROUP "group1"
+      EXPRESSION "16"
+      STYLE 
+         COLOR  "#DA2E1D"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "8757 casi"
+      GROUP "group1"
+      EXPRESSION "17"
+      STYLE 
+         COLOR  "#C02114"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "2285 casi"
+      GROUP "group1"
+      EXPRESSION "18"
+      STYLE 
+         COLOR  "#DAF0B3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "3974 casi"
+      GROUP "group1"
+      EXPRESSION "19"
+      STYLE 
+         COLOR  "#6CC5BE"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1782 casi"
+      GROUP "group1"
+      EXPRESSION "20"
+      STYLE 
+         COLOR  "#EEF8B3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1479 casi"
+      GROUP "group1"
+      EXPRESSION "21"
+      STYLE 
+         COLOR  "#F4FBC0"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "2003 casi"
+      GROUP "group1"
+      EXPRESSION "22"
+      STYLE 
+         COLOR  "#E6F5B2"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "2405 casi"
+      GROUP "group1"
+      EXPRESSION "23"
+      STYLE 
+         COLOR  "#D5EEB3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1434 casi"
+      GROUP "group1"
+      EXPRESSION "24"
+      STYLE 
+         COLOR  "#F5FBC2"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "487 casi"
+      GROUP "group1"
+      EXPRESSION "25"
+      STYLE 
+         COLOR  "#E7E6D3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1606 casi"
+      GROUP "group1"
+      EXPRESSION "26"
+      STYLE 
+         COLOR  "#F2FABB"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1293 casi"
+      GROUP "group1"
+      EXPRESSION "27"
+      STYLE 
+         COLOR  "#F8FCC9"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "2489 casi"
+      GROUP "group1"
+      EXPRESSION "28"
+      STYLE 
+         COLOR  "#D2EDB3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "152 casi"
+      GROUP "group1"
+      EXPRESSION "29"
+      STYLE 
+         COLOR  "#D4D4CE"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "641 casi"
+      GROUP "group1"
+      EXPRESSION "30"
+      STYLE 
+         COLOR  "#EFEFD5"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "110 casi"
+      GROUP "group1"
+      EXPRESSION "31"
+      STYLE 
+         COLOR  "#D2D1CD"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "598 casi"
+      GROUP "group1"
+      EXPRESSION "32"
+      STYLE 
+         COLOR  "#EDEDD5"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "2765 casi"
+      GROUP "group1"
+      EXPRESSION "33"
+      STYLE 
+         COLOR  "#C5E8B4"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "2049 casi"
+      GROUP "group1"
+      EXPRESSION "34"
+      STYLE 
+         COLOR  "#E4F4B2"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "2665 casi"
+      GROUP "group1"
+      EXPRESSION "35"
+      STYLE 
+         COLOR  "#CAEAB4"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "2416 casi"
+      GROUP "group1"
+      EXPRESSION "36"
+      STYLE 
+         COLOR  "#D5EEB3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "2225 casi"
+      GROUP "group1"
+      EXPRESSION "37"
+      STYLE 
+         COLOR  "#DDF1B2"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "341 casi"
+      GROUP "group1"
+      EXPRESSION "38"
+      STYLE 
+         COLOR  "#DFDED1"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "627 casi"
+      GROUP "group1"
+      EXPRESSION "39"
+      STYLE 
+         COLOR  "#EFEED5"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "789 casi"
+      GROUP "group1"
+      EXPRESSION "40"
+      STYLE 
+         COLOR  "#F8F8D7"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1756 casi"
+      GROUP "group1"
+      EXPRESSION "41"
+      STYLE 
+         COLOR  "#EEF9B4"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1211 casi"
+      GROUP "group1"
+      EXPRESSION "42"
+      STYLE 
+         COLOR  "#F9FDCC"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "533 casi"
+      GROUP "group1"
+      EXPRESSION "43"
+      STYLE 
+         COLOR  "#E9E9D4"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "227 casi"
+      GROUP "group1"
+      EXPRESSION "44"
+      STYLE 
+         COLOR  "#D8D8CF"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "644 casi"
+      GROUP "group1"
+      EXPRESSION "45"
+      STYLE 
+         COLOR  "#F0EFD5"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "802 casi"
+      GROUP "group1"
+      EXPRESSION "46"
+      STYLE 
+         COLOR  "#F8F8D7"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "346 casi"
+      GROUP "group1"
+      EXPRESSION "47"
+      STYLE 
+         COLOR  "#DFDFD1"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1419 casi"
+      GROUP "group1"
+      EXPRESSION "48"
+      STYLE 
+         COLOR  "#F5FBC3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "301 casi"
+      GROUP "group1"
+      EXPRESSION "49"
+      STYLE 
+         COLOR  "#DCDCD0"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "515 casi"
+      GROUP "group1"
+      EXPRESSION "50"
+      STYLE 
+         COLOR  "#E8E8D3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "357 casi"
+      GROUP "group1"
+      EXPRESSION "51"
+      STYLE 
+         COLOR  "#DFDFD1"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "334 casi"
+      GROUP "group1"
+      EXPRESSION "52"
+      STYLE 
+         COLOR  "#DEDED1"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "264 casi"
+      GROUP "group1"
+      EXPRESSION "53"
+      STYLE 
+         COLOR  "#DADAD0"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "844 casi"
+      GROUP "group1"
+      EXPRESSION "54"
+      STYLE 
+         COLOR  "#FBFBD8"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "246 casi"
+      GROUP "group1"
+      EXPRESSION "55"
+      STYLE 
+         COLOR  "#D9D9CF"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "219 casi"
+      GROUP "group1"
+      EXPRESSION "56"
+      STYLE 
+         COLOR  "#D8D7CF"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "188 casi"
+      GROUP "group1"
+      EXPRESSION "57"
+      STYLE 
+         COLOR  "#D6D6CF"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "2393 casi"
+      GROUP "group1"
+      EXPRESSION "58"
+      STYLE 
+         COLOR  "#D6EFB3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "280 casi"
+      GROUP "group1"
+      EXPRESSION "59"
+      STYLE 
+         COLOR  "#DBDBD0"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "334 casi"
+      GROUP "group1"
+      EXPRESSION "60"
+      STYLE 
+         COLOR  "#DEDED1"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "255 casi"
+      GROUP "group1"
+      EXPRESSION "61"
+      STYLE 
+         COLOR  "#DAD9D0"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "85 casi"
+      GROUP "group1"
+      EXPRESSION "62"
+      STYLE 
+         COLOR  "#D0D0CD"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1279 casi"
+      GROUP "group1"
+      EXPRESSION "63"
+      STYLE 
+         COLOR  "#F8FCC9"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "290 casi"
+      GROUP "group1"
+      EXPRESSION "64"
+      STYLE 
+         COLOR  "#DCDBD0"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "385 casi"
+      GROUP "group1"
+      EXPRESSION "65"
+      STYLE 
+         COLOR  "#E1E1D1"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "140 casi"
+      GROUP "group1"
+      EXPRESSION "66"
+      STYLE 
+         COLOR  "#D3D3CE"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "412 casi"
+      GROUP "group1"
+      EXPRESSION "67"
+      STYLE 
+         COLOR  "#E3E2D2"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "646 casi"
+      GROUP "group1"
+      EXPRESSION "68"
+      STYLE 
+         COLOR  "#F0EFD5"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "299 casi"
+      GROUP "group1"
+      EXPRESSION "69"
+      STYLE 
+         COLOR  "#DCDCD0"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "142 casi"
+      GROUP "group1"
+      EXPRESSION "70"
+      STYLE 
+         COLOR  "#D3D3CE"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "502 casi"
+      GROUP "group1"
+      EXPRESSION "71"
+      STYLE 
+         COLOR  "#E8E7D3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "700 casi"
+      GROUP "group1"
+      EXPRESSION "72"
+      STYLE 
+         COLOR  "#F3F2D6"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "163 casi"
+      GROUP "group1"
+      EXPRESSION "73"
+      STYLE 
+         COLOR  "#D5D4CE"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "208 casi"
+      GROUP "group1"
+      EXPRESSION "74"
+      STYLE 
+         COLOR  "#D7D7CF"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "353 casi"
+      GROUP "group1"
+      EXPRESSION "75"
+      STYLE 
+         COLOR  "#DFDFD1"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "128 casi"
+      GROUP "group1"
+      EXPRESSION "76"
+      STYLE 
+         COLOR  "#D3D2CE"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "118 casi"
+      GROUP "group1"
+      EXPRESSION "77"
+      STYLE 
+         COLOR  "#D2D2CE"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "194 casi"
+      GROUP "group1"
+      EXPRESSION "78"
+      STYLE 
+         COLOR  "#D6D6CF"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "146 casi"
+      GROUP "group1"
+      EXPRESSION "79"
+      STYLE 
+         COLOR  "#D4D3CE"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "207 casi"
+      GROUP "group1"
+      EXPRESSION "80"
+      STYLE 
+         COLOR  "#D7D7CF"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "80 casi"
+      GROUP "group1"
+      EXPRESSION "81"
+      STYLE 
+         COLOR  "#D0D0CD"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "282 casi"
+      GROUP "group1"
+      EXPRESSION "82"
+      STYLE 
+         COLOR  "#DBDBD0"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "323 casi"
+      GROUP "group1"
+      EXPRESSION "83"
+      STYLE 
+         COLOR  "#DEDDD1"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "98 casi"
+      GROUP "group1"
+      EXPRESSION "84"
+      STYLE 
+         COLOR  "#D1D1CD"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "80 casi"
+      GROUP "group1"
+      EXPRESSION "85"
+      STYLE 
+         COLOR  "#D0D0CD"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "238 casi"
+      GROUP "group1"
+      EXPRESSION "86"
+      STYLE 
+         COLOR  "#D9D9CF"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "544 casi"
+      GROUP "group1"
+      EXPRESSION "87"
+      STYLE 
+         COLOR  "#EAEAD4"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "45 casi"
+      GROUP "group1"
+      EXPRESSION "88"
+      STYLE 
+         COLOR  "#CECECD"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "101 casi"
+      GROUP "group1"
+      EXPRESSION "89"
+      STYLE 
+         COLOR  "#D1D1CD"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "528 casi"
+      GROUP "group1"
+      EXPRESSION "90"
+      STYLE 
+         COLOR  "#E9E9D4"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "60 casi"
+      GROUP "group1"
+      EXPRESSION "91"
+      STYLE 
+         COLOR  "#CFCFCD"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "126 casi"
+      GROUP "group1"
+      EXPRESSION "92"
+      STYLE 
+         COLOR  "#D2D2CE"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "441 casi"
+      GROUP "group1"
+      EXPRESSION "93"
+      STYLE 
+         COLOR  "#E4E4D2"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "11 casi"
+      GROUP "group1"
+      EXPRESSION "94"
+      STYLE 
+         COLOR  "#CCCCCC"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "18 casi"
+      GROUP "group1"
+      EXPRESSION "95"
+      STYLE 
+         COLOR  "#CCCCCC"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "523 casi"
+      GROUP "group1"
+      EXPRESSION "96"
+      STYLE 
+         COLOR  "#E9E8D3"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1552 casi"
+      GROUP "group1"
+      EXPRESSION "97"
+      STYLE 
+         COLOR  "#F3FABD"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "2189 casi"
+      GROUP "group1"
+      EXPRESSION "98"
+      STYLE 
+         COLOR  "#DEF2B2"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "1456 casi"
+      GROUP "group1"
+      EXPRESSION "99"
+      STYLE 
+         COLOR  "#F5FBC1"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "291 casi"
+      GROUP "group1"
+      EXPRESSION "100"
+      STYLE 
+         COLOR  "#DCDBD0"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "94 casi"
+      GROUP "group1"
+      EXPRESSION "101"
+      STYLE 
+         COLOR  "#D1D1CD"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "48 casi"
+      GROUP "group1"
+      EXPRESSION "102"
+      STYLE 
+         COLOR  "#CECECD"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "444 casi"
+      GROUP "group1"
+      EXPRESSION "103"
+      STYLE 
+         COLOR  "#E4E4D2"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "2633 casi"
+      GROUP "group1"
+      EXPRESSION "108"
+      STYLE 
+         COLOR  "#CBEBB4"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "284 casi"
+      GROUP "group1"
+      EXPRESSION "109"
+      STYLE 
+         COLOR  "#DBDBD0"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "126 casi"
+      GROUP "group1"
+      EXPRESSION "110"
+      STYLE 
+         COLOR  "#D2D2CE"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+          
+    CLASS
+      NAME "62 casi"
+      GROUP "group1"
+      EXPRESSION "111"
+      STYLE 
+         COLOR  "#CFCFCD"
+         OPACITY 75
+      END
+      STYLE 
+         OUTLINECOLOR  255 255 255
+         WIDTH 20
+         MINWIDTH 0.2
+         MAXWIDTH 5
+      END
+   END
+    
+   
+  END
+    
+  include "footer.map" 
+    

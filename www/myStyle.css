@@ -1,0 +1,66 @@
+#mymap {
+  height:calc(100vh - 155px) !important;
+  min-height:600px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-bottom:15px;
+}
+
+.dygraph-legend{
+  left: 70px !important;
+}
+#sliderContainer  .form-group.shiny-input-container {
+    width: calc(100vw - 150px);
+    display: inline-block; 
+}
+
+.slider-animate-container {
+    position: absolute !important;
+    right: 10px;
+    top: 0px;
+    font-size: 36px !important;
+    margin-top: 10px !important;
+}
+
+body{
+  line-height: 1.2 !important;
+}
+.irs-max, .irs-single, .irs-min {
+  display:none;
+}
+.irs-grid-text { 
+    font-size: 12px !important; 
+}
+.irs-line{
+  background:#666 !important;
+}
+.irs-bar, .irs-bar-edge { 
+    opacity: 0 !important; 
+}
+
+.selectize-dropdown{
+  z-index:99999999;
+}
+.form-group {
+  margin-bottom:1px !important;
+}
+div#date1 input.form-control  {
+color: red !important;
+font-size: larger;
+margin: 0;
+background: darkgray;
+padding: 15px;
+}
+#remote_addr {
+  display:none;
+}
+h5.info2 {
+  margin-top:0;
+  margin-bottom:5px;
+  padding:10px;
+  color:green;
+  font-weight:bold;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}

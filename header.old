@@ -1,0 +1,184 @@
+MAP
+EXTENT 0 2 5670760 15180000
+FONTSET "/var/geodata/etc/fonts.txt"
+IMAGECOLOR 255 255 255
+IMAGETYPE AGG
+SYMBOLSET "/var/geodata/etc/symbols6.0.sym"
+SHAPEPATH ""
+SIZE 1200 600
+STATUS ON
+UNITS METERS
+RESOLUTION 96
+NAME "main" 
+CONFIG "MS_ERRORFILE" "/var/geodata/etc/ms_error.txt"
+DEBUG 0
+PROJECTION 
+"init=epsg:900913"
+END 
+
+OUTPUTFORMAT
+NAME GTiff
+DRIVER "GDAL/GTiff"
+MIMETYPE "image/tiff"
+IMAGEMODE FLOAT32
+EXTENSION "tif"
+END
+
+OUTPUTFORMAT
+NAME AAIGRID
+DRIVER "GDAL/AAIGRID"
+MIMETYPE "image/x-aaigrid"
+IMAGEMODE INT16
+EXTENSION "grd"
+FORMATOPTION "FILENAME=result.grd"
+END
+
+OUTPUTFORMAT
+NAME "jpeg"
+DRIVER AGG/JPEG
+IMAGEMODE RGB
+FORMATOPTION "QUALITY=75"
+END
+
+
+OUTPUTFORMAT
+NAME "AGG"
+MIMETYPE "image/png"
+DRIVER "AGG/PNG"
+EXTENSION "png"
+IMAGEMODE "RGBA"
+TRANSPARENT TRUE
+END
+
+OUTPUTFORMAT
+NAME "AGG_JPGLOW"
+DRIVER AGG/JPEG 
+EXTENSION "jpg"
+IMAGEMODE "RGB"	
+FORMATOPTION "QUALITY=55"
+END    
+
+
+OUTPUTFORMAT
+NAME "AGG_JPGHIGH"
+DRIVER AGG/JPEG 
+EXTENSION "jpg"
+IMAGEMODE "RGB"	
+FORMATOPTION "QUALITY=80"
+END    
+
+
+
+
+
+QUERYMAP
+STYLE HILITE
+STATUS ON
+END
+
+LEGEND
+IMAGECOLOR -1 -1 -1
+#KEYSPACING 0 5
+STATUS ON
+LABEL
+ANGLE AUTO
+ANTIALIAS TRUE
+FONT "arial"
+SIZE 10
+TYPE TRUETYPE
+BUFFER 0
+COLOR 0 0 0
+FORCE FALSE
+#OFFSET 2 -5
+OUTLINECOLOR 255 255 255
+#PARTIALS TRUE
+#POSITION UR
+END
+END
+
+
+
+WEB
+# EMPTY "../lineacom/empty.html"
+# ERROR "../lineacom/error.html"
+# FOOTER "templates/footer.html"
+# HEADER "templates/header.html"
+IMAGEPATH "/var/geodata/tmp/map_tmp/"
+IMAGEURL "geodata/tmp/map_tmp/"
+# LOG "/var/geodata/etc/aaaa_log.html"
+
+VALIDATION
+# %firstname% substitutions can only have letters and hyphens 
+'text'   '*+'
+END
+
+#QUERYFORMAT text/html
+#LEGENDFORMAT text/html
+#BROWSEFORMAT text/html
+#TEMPLATE "../leaflet.php"
+METADATA
+
+
+"wms_inspire_capabilities" "embed"
+"wms_languages" "ita"               #first default, values according ISO 639-2/B
+"wms_inspire_temporal_reference" "2019-09-19" #date of last revision, value according YYYY-MM-DD
+"wms_inspire_mpoc_name" "Consuelo Marini"    #point of contact
+"wms_inspire_mpoc_email" "consuelo.marini@a2asmartcity.it" #point of contact
+"wms_inspire_metadatadate" "2019-09-19" #value according YYYY-MM-DD
+"wms_inspire_resourcelocator" "http://217.146.204.139/cgi-bin/mapserv?" #URL for ResourceLocator
+"wms_inspire_keyword" "infoMapAccessService" #value according "classification of spatial data services"
+"wms_keywordlist_ISO_items" "infoMapAccessService"
+"wms_keywordlist_vocabulary" "ISO"			
+
+"ows_enable_request" "*"
+
+"ows_title"           "A2A WMS-WCS-WFS Server"
+"ows_onlineresource"  "http://217.146.204.139/cgi-bin/mapserv?"
+"ows_srs"             "EPSG:900913 EPSG:3857 EPSG:3035 EPSG:32632 EPSG:25832 EPSG:4326 EPSG:3003 "
+"ows_addresstype"					"city"
+"ows_address" 				    "Via A.Lamarmora 230"
+"ows_city" 						    "Brescia"
+"ows_stateorprovince"     "Brescia"
+"ows_postcode"				    "25038"
+"ows_country"					    "Italy"
+"ows_contactperson"  "Francesco Pirotti"
+"ows_contactorganization"  "A2A"
+"ows_contactposition"  "Tech."
+"ows_fees" "none"
+"ows_accessconstraints" "none"
+"ows_abstract" "Servizio WFS/WMS/WCS per accesso ai dati cartografici smartcity LAB"
+"ows_keywordlist" "database topografico, cartografia, catasto"
+"ows_hoursofservice" "24h"
+"ows_contactinstructions" "email"
+"ows_role" ""
+"ows_contactfacsimiletelephone" "+39 030 3554929"
+"ows_contactelectronicmailaddress" "sit@a2asmartcity.it" 
+"ows_country" "Italy"
+"ows_contactorganization" "A2A"
+"ows_contactvoicetelephone" "+39 030 3554929"
+"ows_contactperson" "Consuelo Marini"  
+"ows_stateorprovince" "Lombardia"   
+"wcs_label"           "A2A Geo-Server" ### required
+"wcs_description"     "Server WCS"
+"wcs_onlineresource"  "http://217.146.204.139/cgi-bin/mapserv?" 
+"wcs_fees"            "none"
+"wcs_accessconstraints"    "none"
+"wcs_keywordlist"          "wcs,test"
+"wcs_metadatalink_type"    "TC211"
+"wcs_metadatalink_format"  "text/plain"
+"wcs_metadatalink_href"    "http://someurl.com"
+"wcs_address"              "Via  A.Lamarmora 230"
+"wcs_city"                 "Brescia"
+"wcs_stateorprovince"      "ITA"
+"wcs_postcode"             "00000"
+"wcs_country"              "Italy"
+"wcs_contactelectronicmailaddress" "sit@a2asmartcity.it"
+"wcs_contactperson"            "me" 
+"wcs_contactvoicetelephone"    ""
+"wcs_contactfacimiletelephone" ""
+"wcs_service_onlineresource"   "http://cartografia01.cogeme.com/fcgi-bin/mapserv?map=/ms4w/Apache/htdocs/lineacomsit/maps/wcs.map&"
+"wcs_enable_request"           "*"
+
+END
+END
+

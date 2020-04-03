@@ -1,0 +1,57 @@
+MAP
+  NAME "COVID-19"
+  EXTENT -0.5 50.977222 0.5 51.977222
+  #IMAGETYPE JPEG
+  #IMAGETYPE PNG24
+  IMAGETYPE PNG
+  IMAGECOLOR 255 255 255
+  STATUS ON
+  SIZE 200 200
+  FONTSET "fonts.txt"
+  SYMBOLSET "symbols.txt"
+  CONFIG "MS_ERRORFILE" "/archivio/R/shared/covid19carto/ms_error.txt"
+ 
+
+  LEGEND
+    IMAGECOLOR 255 255 255
+  END
+  
+  WEB
+    METADATA
+
+"ows_enable_request" "*"
+
+"ows_title"           "CIRGEO WMS-WCS-WFS Server"
+"ows_onlineresource"  "http://geolab02.vs-ix.net/cgi-bin/mapserv?"
+"ows_srs"             "EPSG:900913 EPSG:3857 EPSG:3035 EPSG:32632 EPSG:25832 EPSG:4326 EPSG:3003 "
+"ows_addresstype"					"city"
+"ows_address" 				    "Via dell'Università 16"
+"ows_city" 						    "Padova"
+"ows_stateorprovince"     "Padova"
+"ows_postcode"				    "35020"
+"ows_country"					    "Italy"
+"ows_contactperson"  "Francesco Pirotti"
+"ows_contactorganization"  "CIRGEO"
+"ows_contactposition"  "Tech."
+"ows_fees" "none"
+"ows_accessconstraints" "none"
+"ows_abstract" "Servizio WFS/WMS/WCS per accesso ai dati cartografici CIRGEO"
+"ows_keywordlist" "database topografico, cartografia, catasto"
+"ows_hoursofservice" "24h"
+"ows_contactinstructions" "email"
+"ows_role" ""
+"ows_contactfacsimiletelephone" "+39 392 395 2067"
+"ows_contactelectronicmailaddress" "francesco.pirotti@unipd.it" 
+"ows_country" "Italy"
+"ows_contactorganization" "CIRGEO"
+"ows_contactvoicetelephone" "+39 392 395 2067"
+"ows_contactperson" "Francesco Pirotti"  
+"ows_stateorprovince" "Veneto"   
+    END
+  END
+
+  PROJECTION
+    "init=epsg:3857"
+  END
+    
+

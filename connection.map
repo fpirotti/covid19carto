@@ -1,0 +1,4 @@
+ 
+    CONNECTIONTYPE POSTGIS
+    CONNECTION "user=postgres password=geolab02%postgres dbname=wgis_integrato  host=localhost port=5432"
+	PROCESSING "CLOSE_CONNECTION=DEFER"
